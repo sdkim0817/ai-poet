@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 import streamlit as st
 
-llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
 prompt = ChatPromptTemplate.from_messages([
     ("system", "You are a helpful assistant."),
     ("user", "{input}")
